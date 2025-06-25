@@ -1,0 +1,291 @@
+
+*{
+    margin: 0;
+padding:0;
+box-sizing: border-box;
+scroll-behavior: smooth;
+font-family: sans-serif;
+}
+
+body {
+width: 100%;
+min-height: 100vh;
+background-color: aliceblue;
+}
+header{
+    height: 60px;
+    width: 100%;
+    background-color: rgb(46, 44, 44);
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    padding: 20px 120px;
+}
+.container{
+    width: 150%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+}
+nav a{
+    list-style: none;
+    display: inline;
+    margin-right: 20px;
+    font-weight: 800;
+    cursor: pointer;
+    color: whitesmoke;
+text-decoration: none;
+transition: .3s;
+}
+nav a:hover{
+color: rgb(168, 30, 30); 
+}
+.logo{
+font-size: 24px;
+color: whitesmoke;
+font-weight: 600;
+text-decoration: none;
+}
+.main{
+    width: 100%;
+    height: auto;
+    background: url("PictureS/aiimage.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right center;
+    background-attachment: fixed;
+    color: white;
+    text-align: center;
+    padding: 200px 0;
+    margin: 0px;
+}
+.main h2{
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: whitesmoke;
+}
+.main p{
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: beige;
+}
+.search-box {
+    max-width: 550px;
+    margin: 15px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Search-box input{
+    width: 60%;
+    padding: 10px;
+    outline: none;
+    border: 0;
+    border-radius: 5px 0 0 5px;
+    font-size: 1rem;
+    border: 1px solid rgb(168, 30, 30);
+}
+.Search-box button{
+    
+    padding: 10px 20px;
+    outline: none;
+    border: 0;
+    border-radius: 0px 5px 5px 0px;
+    font-size: 1rem;
+    background: rgb(168, 30, 30);
+    color: aliceblue;
+    cursor: pointer;
+}
+.recipes{
+    padding: 50px 0;
+}
+.recipes h4{
+text-align: center;
+margin-bottom: 30px;
+font-size: 28px;
+}
+.recipe-section{
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    column-gap: 10px;
+}
+.recipe-card{
+    background: white;
+    margin: 30px 10px;
+    border-radius: 8px;
+    border: 1px solid gray;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgb(0, 0, 0, 0.1);
+    height: 400px; 
+    position: relative; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.recipe-card img{
+  width: 100%;
+height: 250px;
+object-fit: cover; 
+}
+.recipe-card h3{
+   font-size: 22px;
+   padding: 20px;
+    flex-grow: 1; 
+  }
+  .recipe-card:hover {
+    transform: scale(1.03);
+}
+
+  .recipe-card a{
+
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    background: gray;
+    color: aliceblue;
+    padding: 20px 0;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 20px;
+    border-top: 1px solid #ccc;
+  }
+  .view-btn {
+   
+cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.view-btn:hover {
+    background-color:rgb(168, 30, 30);
+}
+
+  footer{
+    background: gray;
+    padding: 20px 0;
+    color: aliceblue;
+    text-align: center;
+  }
+.about-contact-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  background: linear-gradient(135deg, #f3f4f6, #ffffff);
+  padding: 60px 40px;
+}
+
+.about-us, .contact {
+  flex: 1 1 45%;
+  background: #ffffff;
+  padding: 35px 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #eee;
+}
+
+.about-us:hover, .contact:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+}
+
+.about-us h2, .contact h2 {
+  font-size: 28px;
+  color: #34495e;
+  margin-bottom: 20px;
+  border-bottom: 3px solid  rgb(168, 30, 30);
+  padding-bottom: 8px;
+}
+
+.about-us h3 {
+  font-size: 22px;
+  margin-top: 25px;
+  color: rgb(168, 30, 30);
+}
+
+.about-us ul, .contact ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 15px;
+}
+
+.about-us ul li, .contact ul li {
+  margin-bottom: 12px;
+  line-height: 1.8;
+  font-size: 16px;
+  color: #555;
+  position: relative;
+  padding-left: 20px;
+}
+
+.about-us ul li::before, .contact ul li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color:  rgb(168, 30, 30);
+  font-weight: bold;
+}
+
+.about-us p, .contact p {
+  font-size: 16px;
+  line-height: 1.9;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .about-contact-wrapper {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+
+  .about-us, .contact {
+    flex: 1 1 100%;
+  }
+}
+
+
+.contact-list li {
+  margin-bottom: 15px;
+  line-height: 1.8;
+  font-size: 16px;
+  color: #555;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-left: 0;
+  position: relative;
+}
+
+.contact-list li i {
+  color: rgb(168, 30, 30);
+  font-size: 18px;
+  min-width: 20px;
+}
+
+.contact-list a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.contact-list a:hover {
+  color: rgb(168, 30, 30);
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+ 

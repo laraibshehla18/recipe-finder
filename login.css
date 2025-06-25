@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url("PictureS/pngtree-healthy-thai-food-recipes-concept-image_15645273.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.login-box {
+    background-color: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    
+}
+
+.login-box h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: x-large;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: medium;
+}
+.password-container {
+    position: relative;
+    width: 300px;
+    margin-bottom: 15px; /* same as other fields */
+}
+
+.password-container input[type="password"],
+.password-container input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    padding-right: 10px; /* space for eye icon */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: medium;
+}
+
+#eyeicon {
+    position: absolute;
+    top: 35%;
+    right: 0px;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+#eyeicon:hover {
+    opacity: 1;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color:rgb(168, 30, 30); 
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: medium;
+    margin: 5px 1%;
+    gap: 60px;
+}
+
+button:hover {
+    background-color:rgb(168, 30, 30); 
+}
+
+.popup {
+    position: fixed;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(168, 30, 30);
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    z-index: 999;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
